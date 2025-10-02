@@ -19,7 +19,7 @@ export interface PKClient {
     create(
       update: AtLeastOne<PKPatchUpdate>,
       opts?: PKPatchUpdateOptions,
-      origin: PKResult,
+      origin?: PKResult,
     ): Promise<PKPatchResult>;
     get(id: string, language?: string): Promise<PKPatchResult>;
     update(
